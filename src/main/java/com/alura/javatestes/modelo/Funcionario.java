@@ -27,4 +27,7 @@ public class Funcionario {
 		return salario;
 	}
 
+	public void aplicaReajuste(BigDecimal porcentagemReajuste) {
+		this.salario = salario.multiply(porcentagemReajuste).add(salario);
+	}
 }
